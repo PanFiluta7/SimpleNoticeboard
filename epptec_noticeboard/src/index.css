@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Styles */
+html,
+body {
+  @apply bg-gray-800 text-white;
+}
+
+/* Noticeboard Styles */
+.noticeboard-container {
+  @apply min-h-screen flex items-center justify-center p-6;
+}
+
+.noticeboard {
+  @apply bg-gray-700 p-4 rounded-lg shadow-lg max-w-lg w-full;
+}
+
+.notice-title {
+  @apply text-2xl font-bold mb-4 text-gray-200;
+}
+
+.notice-message {
+  @apply text-gray-400;
+}
+
+.notice-button {
+  @apply mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded;
+}
