@@ -11,7 +11,6 @@ const PostPage = () => {
       const parsedPostId = parseInt(postId);
       const postData = await detailPostData(parsedPostId);
       setPost(postData);
-      console.log(postData);
     };
     fetchPost();
   }, [postId]);
