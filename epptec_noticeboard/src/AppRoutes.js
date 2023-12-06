@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import NoticeBoard from "./components/noticeboard/noticeBoard";
-import PostPage from "./components/post_page";
+import PostPage from "./components/post_page/postPage";
 
 const AppRoutes = () => {
   return (

@@ -19,8 +19,8 @@ const NoticeBoard = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-800">
-      <div className="bg-neutral-600 p-6 rounded-lg border-2 border-stone-200 w-full max-w-lg">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900">
+      <div className="bg-neutral-800 p-6 rounded-lg border-2 border-stone-200 w-full max-w-2xl">
         <h2 className="text-2xl font-bold text-white text-center mb-4">
           Notice Board
         </h2>
@@ -28,7 +28,7 @@ const NoticeBoard = () => {
           {notices.length > 0 ? (
             notices.map((notice) => (
               <Notice
-                key={notice.id}
+                id={notice.id}
                 author={notice.authorName}
                 title={notice.title}
                 body={notice.body}
